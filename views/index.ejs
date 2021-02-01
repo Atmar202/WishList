@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5cca11e197.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Wish List</title>
 </head>
@@ -12,10 +13,10 @@
             <form action="/delete" method="POST">
                 <div class="item">
             <table>
-        <td><input type="checkbox" value="<%= wishItems[i].wish %>" type="checkbox" onchange="this.form.submit()"></td>
+        <td><a class="fas fa-trash" value="<%= wishItems[i].wish %>" href="/" onclick="this.form.submit()"></a></td>
         </table>
-            <p><%= wishItems[i].title %></p>
-            <p class="number"><%= wishItems[i].price %></p>
+            <input class="inputUnique" value="<%= wishItems[i].title %>">
+            <input class="inputUnique2" value="<%= wishItems[i].price %>">
         </div>
     </form>
 <% } %>

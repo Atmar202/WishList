@@ -17,7 +17,7 @@
     }
     
     .box {
-      max-width: 400px;
+      max-width: 700px;
       margin: 50px auto;
       background: white;
       border-radius: 5px;
@@ -52,18 +52,21 @@
       margin: 20px;
     }
     
-    p {
+    .inputUnique {
       margin: 0;
-      margin-left: -10rem;
+      margin-left: 5rem;
       padding: 20px;
       font-size: 20px;
-      font-weight: 200;
       color: #00204a;
     }
-    .number {
-      margin-left: 1rem;
+    .inputUnique2 {
+      font-size: 20px;
+      margin-left: 0.5rem;
     }
     
+    a {
+      margin-left: 10rem;
+    }
     form {
       padding-top: 25px;
       text-align: center;
@@ -71,14 +74,19 @@
     }
     button {
       min-height: 50px;
-      width: 50px;
-      border-radius: 50%;
+      width: 150px;
+      border-radius: 25px;
       border-color: transparent;
       background-color: var(--orange-color);
       color: #fff;
       font-size: 30px;
       padding-bottom: 6px;
       border-width: 0;
+      transition-duration: 0.4s;
+    }
+
+    button:hover {
+      background-color: #00204a;
     }
 
     .btn {
