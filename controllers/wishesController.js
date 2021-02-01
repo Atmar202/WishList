@@ -13,6 +13,7 @@ exports.postnewWish = (req, res) =>{
 };
 
 exports.deleteWish = (req, res) =>{
-    Wish.deleteWish(req.body.checkbox);
+    console.log('call from delete' + req.body.hidden);
+    Wish.deleteWish(req.body.hidden);
     res.redirect('/');
 };

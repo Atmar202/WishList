@@ -10,15 +10,24 @@
 <body>
     <div class="box">
         <% for(let i = 0; i < wishItems.length; i++) { %>
-            <form action="/delete" method="POST">
-                <div class="item">
+            
+            
             <table>
-        <td><a class="fas fa-trash" value="<%= wishItems[i].wish %>" href="/" onclick="this.form.submit()"></a></td>
-        </table>
-            <input class="inputUnique" value="<%= wishItems[i].title %>">
-            <input class="inputUnique2" value="<%= wishItems[i].price %>">
-        </div>
-    </form>
+                <tr>
+                    <td><%= wishItems[i].title %></td>
+                    <td><%= wishItems[i].price %></td>
+                    <td>
+                        <form action="/delete" method="POST">
+            <input type="hidden" value="<%= wishItems[i].title %>" name="hidden">
+            <button type="submit">-</button> 
+         </form> 
+        </td>
+                </tr>
+        
+       </table>
+            
+       
+ 
 <% } %>
 
         <form action="/" method="POST">
